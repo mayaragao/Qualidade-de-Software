@@ -1,4 +1,4 @@
-# Qualidade-de-Software
+# Qualidade de Software
 Desenvolvimento do projeto **Riolê** referente a disciplina COS482 - Qualidade de Software e seus artefatos de projeto.
 
 
