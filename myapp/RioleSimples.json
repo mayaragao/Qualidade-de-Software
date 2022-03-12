@@ -1,0 +1,42 @@
+{
+  "fields": [
+    {
+      "fieldName": "latitude",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "longitude",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "eventName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "eventDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "wentToEvent",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "feedbackComment",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "feedbackGrade",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "entityType": "domain",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": true,
+  "pagination": "no",
+  "name": "RioleSimples",
+  "changelogDate": "20210401000001",
+  "skipFakeData": true
+}

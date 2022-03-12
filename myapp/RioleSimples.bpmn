@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_1x9wbs8" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="4.12.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.15.0">
+  <bpmn:process id="RioleSimplesProcess" name="RioleSimples" isExecutable="true">
+    <bpmn:documentation>## Alunas:
+### - Ana Jaolino
+### - Juliana Piaz
+### - Mayara Aragão</bpmn:documentation>
+    <bpmn:startEvent id="StartEvent_1" name="Vontade de&#10;Dar Rolê">
+      <bpmn:outgoing>Flow_0abvy3v</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="Event_096t2tp" name="Rolê finalizado">
+      <bpmn:incoming>Flow_0syfpv1</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_0abvy3v" sourceRef="StartEvent_1" targetRef="searchPlace" />
+    <bpmn:sequenceFlow id="Flow_1pt4m38" sourceRef="searchPlace" targetRef="selectEvent" />
+    <bpmn:sequenceFlow id="Flow_0syfpv1" sourceRef="sendFeedback" targetRef="Event_096t2tp" />
+    <bpmn:sequenceFlow id="Flow_0syzge9" sourceRef="goToEvent" targetRef="sendFeedback" />
+    <bpmn:userTask id="searchPlace" name="Buscar Local">
+      <bpmn:incoming>Flow_0abvy3v</bpmn:incoming>
+      <bpmn:outgoing>Flow_1pt4m38</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="selectEvent" name="Selecionar Evento">
+      <bpmn:incoming>Flow_1pt4m38</bpmn:incoming>
+      <bpmn:outgoing>Flow_1epui7w</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="goToEvent" name="Ir ao evento">
+      <bpmn:incoming>Flow_1epui7w</bpmn:incoming>
+      <bpmn:outgoing>Flow_0syzge9</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:userTask id="sendFeedback" name="Avaliar / Feedback Evento">
+      <bpmn:incoming>Flow_0syzge9</bpmn:incoming>
+      <bpmn:outgoing>Flow_0syfpv1</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sequenceFlow id="Flow_1epui7w" sourceRef="selectEvent" targetRef="goToEvent" />
+    <bpmn:textAnnotation id="TextAnnotation_1yxlojv">
+      <bpmn:text>Assume q está logado e compartilhando localização</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_177sedw" sourceRef="StartEvent_1" targetRef="TextAnnotation_1yxlojv" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="RioleSimplesProcess">
+      <bpmndi:BPMNShape id="TextAnnotation_1yxlojv_di" bpmnElement="TextAnnotation_1yxlojv">
+        <dc:Bounds x="160" y="90" width="100" height="68" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0abvy3v_di" bpmnElement="Flow_0abvy3v">
+        <di:waypoint x="198" y="210" />
+        <di:waypoint x="280" y="210" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1pt4m38_di" bpmnElement="Flow_1pt4m38">
+        <di:waypoint x="380" y="210" />
+        <di:waypoint x="460" y="210" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1epui7w_di" bpmnElement="Flow_1epui7w">
+        <di:waypoint x="560" y="210" />
+        <di:waypoint x="650" y="210" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0syfpv1_di" bpmnElement="Flow_0syfpv1">
+        <di:waypoint x="940" y="210" />
+        <di:waypoint x="992" y="210" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0syzge9_di" bpmnElement="Flow_0syzge9">
+        <di:waypoint x="750" y="210" />
+        <di:waypoint x="840" y="210" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="StartEvent_1_di" bpmnElement="StartEvent_1">
+        <dc:Bounds x="162" y="192" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="153" y="235" width="56" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_01l56xw_di" bpmnElement="searchPlace">
+        <dc:Bounds x="280" y="170" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_000skcw_di" bpmnElement="selectEvent">
+        <dc:Bounds x="460" y="170" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_096t2tp_di" bpmnElement="Event_096t2tp">
+        <dc:Bounds x="992" y="192" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="974" y="235" width="73" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1ag72nz_di" bpmnElement="goToEvent">
+        <dc:Bounds x="650" y="170" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1crykyx_di" bpmnElement="sendFeedback">
+        <dc:Bounds x="840" y="170" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_177sedw_di" bpmnElement="Association_177sedw">
+        <di:waypoint x="185" y="193" />
+        <di:waypoint x="195" y="158" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
