@@ -1,0 +1,26 @@
+{
+  "fields": [
+    {
+      "fieldName": "feedbackComment",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "feedbackGrade",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "entityType": "user-task-form",
+  "processBpmnId": "RioleMenosSimplesProcess",
+  "processEntityName": "RioleMenosSimplesProcess",
+  "taskBpmnId": "SendFeedback2",
+  "domainEntityName": "RioleMenosSimples",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "skipFakeData": true,
+  "name": "SendFeedback2",
+  "changelogDate": "20220312000003"
+}

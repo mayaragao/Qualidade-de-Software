@@ -1,0 +1,34 @@
+{
+  "fields": [
+    {
+      "fieldName": "eventName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "eventDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "change_search",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "presence_confirmed",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [],
+  "entityType": "user-task-form",
+  "processBpmnId": "RioleMenosSimplesProcess",
+  "processEntityName": "RioleMenosSimplesProcess",
+  "taskBpmnId": "SelectEvent2",
+  "domainEntityName": "RioleMenosSimples",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "skipFakeData": true,
+  "name": "SelectEvent2",
+  "changelogDate": "20220312000003"
+}

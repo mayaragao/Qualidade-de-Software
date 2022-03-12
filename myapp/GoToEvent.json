@@ -1,0 +1,22 @@
+{
+  "fields": [
+    {
+      "fieldName": "wentToEvent",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [],
+  "entityType": "user-task-form",
+  "processBpmnId": "RioleSimplesProcess",
+  "processEntityName": "RioleSimplesProcess",
+  "taskBpmnId": "GoToEvent",
+  "domainEntityName": "RioleSimples",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "skipFakeData": true,
+  "name": "GoToEvent",
+  "changelogDate": "20220312000003"
+}

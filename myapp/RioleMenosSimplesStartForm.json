@@ -1,0 +1,25 @@
+{
+  "fields": [
+    {
+      "fieldName": "latitude",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "longitude",
+      "fieldType": "Double"
+    }
+  ],
+  "relationships": [],
+  "entityType": "start-form",
+  "processBpmnId": "RioleMenosSimplesProcess",
+  "processEntityName": "RioleMenosSimplesProcess",
+  "domainEntityName": "RioleMenosSimples",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "RioleMenosSimplesStartForm",
+  "changelogDate": "20220312000002",
+  "skipFakeData": true
+}

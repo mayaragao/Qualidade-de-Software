@@ -1,0 +1,26 @@
+{
+  "fields": [
+    {
+      "fieldName": "eventName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "eventDate",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [],
+  "entityType": "user-task-form",
+  "processBpmnId": "RioleSimplesProcess",
+  "processEntityName": "RioleSimplesProcess",
+  "taskBpmnId": "SelectEvent",
+  "domainEntityName": "RioleSimples",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "skipFakeData": true,
+  "name": "SelectEvent",
+  "changelogDate": "20220312000003"
+}

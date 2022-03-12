@@ -1,0 +1,60 @@
+{
+  "fields": [
+    {
+      "fieldName": "latitude",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "longitude",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "change_search",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "eventName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "eventDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "presence_confirmed",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "wentToEvent",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "notifyEventEnd",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "give_feedback",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "feedbackComment",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "feedbackGrade",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "entityType": "process-binding",
+  "processBpmnId": "RioleMenosSimplesProcess",
+  "domainEntityName": "RioleMenosSimples",
+  "service": "serviceClass",
+  "dto": "mapstruct",
+  "jpaMetamodelFiltering": false,
+  "readOnly": false,
+  "pagination": "no",
+  "name": "RioleMenosSimplesProcess",
+  "changelogDate": "20220312000002",
+  "skipFakeData": true
+}
